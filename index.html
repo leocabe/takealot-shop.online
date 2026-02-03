@@ -1,37 +1,9 @@
 <!doctype html>
 <html lang="pt">
 <head>
-  <!-- Facebook Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)
-    }(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '2558147041205045');
-    fbq('track', 'PageView');
-    fbq('track', 'ViewContent');
-  </script>
-  <!-- End Facebook Pixel Code -->
-
-  <!-- UTMIFY SCRIPT -->
-  <script
-    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-    data-utmify-prevent-xcod-sck
-    data-utmify-prevent-subids
-    async
-    defer
-  ></script>
-  <!-- END UTMIFY -->
-  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Takealot Clone - Etapas 1 e 2</title>
+  <title>Takealot Watch </title>
 
   <style>
     /* ===== FIX SCROLL HORIZONTAL FANTASMA ===== */
@@ -586,6 +558,33 @@ body{
 .takealotmore-text strong{
   color: #0b6ecb; /* azul Takealot */
   font-weight: 800;
+}
+
+.color-selector{
+  display:flex;
+  gap:12px;
+  padding:12px;
+}
+
+.color-option{
+  border:1px solid #ddd;
+  border-radius:6px;
+  padding:6px;
+  text-align:center;
+  cursor:pointer;
+  width:90px;
+  font-size:12px;
+  background:#fff;
+}
+
+.color-option img{
+  width:100%;
+  height:60px;
+  object-fit:contain;
+}
+
+.color-option.active{
+  border:2px solid #0b6ecb;
 }
 
 /* ===== SHIPS IN 4-6 WORK DAYS (Takealot-like) ===== */
@@ -1589,13 +1588,18 @@ body{
         <button class="dot" data-index="9" aria-label="Image 10"></button>
         <button class="dot" data-index="10" aria-label="Image 11"></button>
         <button class="dot" data-index="11" aria-label="Image 12"></button>
-         <button class="dot" data-index="12" aria-label="Image 1"></button>
+        <button class="dot" data-index="12" aria-label="Image 13"></button>
+        <button class="dot" data-index="13" aria-label="Image 14"></button>
+        <button class="dot" data-index="14" aria-label="Image 15"></button>
+        <button class="dot" data-index="15" aria-label="Image 16"></button>
+        <button class="dot" data-index="16" aria-label="Image 1"></button>
+
       </div>
     </section>
 
     <section class="info" aria-label="Product info">
       <div class="title-row">
-        <h1 class="title">Mellerware Kettle 360 Degree Cordless Glass Silver 1.8L 2200W "Azure"</h1>
+        <h1 class="title">Poedagar Royal Blue – Luxury Watch & AirPods Set</h1>
 
         <button class="share-btn" aria-label="Share">
           <svg class="share-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1608,7 +1612,7 @@ body{
         </button>
       </div>
 
-      <p class="subtitle">Mellerware</p>
+      <p class="subtitle">Golden Perfect</p>
 
       <div class="rating" aria-label="Rating and reviews">
         <svg class="star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -1625,11 +1629,11 @@ body{
     <div class="price-left">
       <div class="main-price">
         <span class="currency">R</span>
-        <span class="price">177</span>
+        <span class="price">197</span>
       </div>
 
       <div class="was-price">
-        <span class="was">R 499</span>
+        <span class="was">R 1,099</span>
         <svg class="info-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="9"></circle>
           <path d="M12 10v6"></path>
@@ -1661,6 +1665,23 @@ body{
     </span>
       </div>
   </div>
+
+  <section class="color-selector">
+  <div class="color-option active" data-img="p1.png">
+    <img src="p1.png" alt="Blue / Gold">
+    <span>Blue / Gold</span>
+  </div>
+
+  <div class="color-option" data-img="p1.2.png">
+    <img src="p1.2.png" alt="Black / Gold">
+    <span>Black / Gold</span>
+  </div>
+
+  <div class="color-option" data-img="p1.3.png">
+    <img src="p1.3.png" alt="Blue / Silver">
+    <span>Blue / Silver</span>
+  </div>
+</section>
 
   <!-- SELLER + CREDIT + REWARDS (acima do shipping) -->
 <section class="seller-block" aria-label="Seller and credit information">
@@ -1727,7 +1748,7 @@ body{
 <section class="ship-strip" aria-label="Shipping and policy information">
   <div class="ship-head">
     <div class="ship-title">
-      Ships in <strong>4 - 6</strong> work days
+      Ships in <strong>1 - 2</strong> work days
     </div>
     <a class="ship-link" href="#" aria-label="Learn More">Learn More</a>
   </div>
@@ -1786,18 +1807,35 @@ body{
   <div class="desc-box" id="descBox">
     <div class="desc-content" id="descContent">
       <p>
-        Features:
-- Mellerware brings you the future today with the futuristic design of the Iris Glass Kettle. It is a stunning addition to any kitchen. With its beautiful glass body and blue illuminating light ring, this 360° cordless, Vision Glass Kettle will set a pleasant mood in any kitchen. It has a 1.7L capacity with a concealed element, a stylish lid opening button and a boil dry cut-out safety feature.
+        Multifunctional Men's Watch + Wireless Earphones - Ultimate Combo
+Best Gift for Men Watch:<p></p>
+Featuring a stunning blue sunburst dial with diamond-studded markers and Roman numerals, this watch exudes sophistication and elegance.<br>
+The multi-faceted bezel reflects light beautifully, making it a stylish statement for any occasion.<p></p>
 
-What's in the box
-1 x Kettle
-1 x Instruction Manual
+Precise Quartz Movement:<br>
+Equipped with a high-quality quartz movement, ensuring accurate timekeeping and long-lasting performance without frequent adjustments.<p></p>
+
+Durable Stainless Steel Strap:<br>
+Designed with a premium stainless steel band accented with gold-tone details, this watch offers both durability and comfort while adding a touch of refinement to your style.<p></p>
+
+Daily Water Resistance:<br>
+Built to withstand splashes and sweat, perfect for everyday wear. (Avoid prolonged water exposure for better longevity.)<p></p>
+
+Earphones:<br>
+Noise Reduction - Enjoy immersive sound with smart noise isolation<br>
+Bluetooth 5.0 - Faster, stable connections with low power consumption<br>
+Touch Control - Effortless control for music, calls & voice assistant<p></p>
+
+Perfect Gift Choice:
+Whether for yourself, your father, boyfriend, or as a business gift, this Ultimate Combo is a symbol of refined taste and makes a thoughtful and stylish present.<p></p>
+
       </p>
 
-      <p class="desc-subhead">What's in the box</p>
-      <p>
-        1 x Kettle<br>
-        1 x Instruction Manual
+      <p class="desc-subhead">What's in the box<br>
+        1 x Golden Perfect Series Men's Watch<br>
+        1 x Instruction manual<br>
+        1 x Earphones<br>
+        1 x Watch Adjuster<br>
       </p>
     </div>
 
@@ -1814,117 +1852,128 @@ What's in the box
 
   <!-- tabela curta (preview) -->
   <div class="pi-table">
-    <div class="pi-row">
-      <div class="pi-key">Categories</div>
-      <div class="pi-val pi-links">
-        <a href="#">Home &amp; Kitchen</a> /<br>
-        <a href="#">Small Kitchen</a><br>
-        <a href="#">Appliances / Kettles</a><br>
-        <a href="#">Appliances / Coffee & Tea</a><br>
-        <a href="#"> Kettles</a>
-      </div>
-    </div>
-
-    <div class="pi-row">
-      <div class="pi-key">Power</div>
-      <div class="pi-val">2200 W</div>
+  <div class="pi-row">
+    <div class="pi-key">Categories</div>
+    <div class="pi-val pi-links">
+      <a href="#">Fashion</a> /<br>
+      <a href="#">Men</a> /<br>
+      <a href="#">Accessories</a> /<br>
+      <a href="#">Watches & Accessories</a> /<br>
+      <a href="#">Watches</a>
     </div>
   </div>
 
-  <button class="pi-showmore" id="piOpen" type="button">Show More</button>
+  <div class="pi-row">
+    <div class="pi-key">Brand</div>
+    <div class="pi-val">Golden Perfect</div>
+  </div>
+</div>
+
+<button class="pi-showmore" id="piOpen" type="button">Show More</button>
 </section>
 
 <!-- MODAL: Product Information -->
 <div class="pi-modal" id="piModal" aria-hidden="true">
   <div class="pi-sheet" role="dialog" aria-modal="true" aria-label="Product Information">
     <div class="pi-sheet-head">
-      <button class="pi-close" id="piClose" type="button" aria-label="Close">
-        ✕
-      </button>
+      <button class="pi-close" id="piClose" type="button" aria-label="Close">✕</button>
       <div class="pi-sheet-title">Product Information</div>
       <div class="pi-head-spacer" aria-hidden="true"></div>
     </div>
 
     <div class="pi-sheet-body">
       <div class="pi-table pi-table--full">
+
         <div class="pi-row">
           <div class="pi-key">Categories</div>
           <div class="pi-val pi-links">
-            <a href="#">Home &amp; Kitchen</a> /<br>
-            <a href="#">Small Kitchen</a><br>
-            <a href="#">Appliances / Cooking</a><br>
-            <a href="#">Appliances / Air</a><br>
-            <a href="#">Fryers</a>
+            <a href="#">Fashion</a> /<br>
+            <a href="#">Men</a> /<br>
+            <a href="#">Accessories</a> /<br>
+            <a href="#">Watches & Accessories</a> /<br>
+            <a href="#">Watches</a>
           </div>
         </div>
 
         <div class="pi-row">
-          <div class="pi-key">Power</div>
-          <div class="pi-val">1800.0 W</div>
-        </div>
-
-        <div class="pi-row">
-          <div class="pi-key">Capacity</div>
-          <div class="pi-val">1.8 L</div>
+          <div class="pi-key">Brand</div>
+          <div class="pi-val">Golden Perfect</div>
         </div>
 
         <div class="pi-row">
           <div class="pi-key">Warranty</div>
-          <div class="pi-val">Limited (36 months)</div>
+          <div class="pi-val">Lifetime (60 months)</div>
+        </div>
+
+        <div class="pi-row">
+          <div class="pi-key">Lifestyle</div>
+          <div class="pi-val">Formal</div>
         </div>
 
         <div class="pi-row">
           <div class="pi-key">Materials</div>
-          <div class="pi-val">Glass</div>
+          <div class="pi-val">Stainless steel</div>
         </div>
 
         <div class="pi-row">
-          <div class="pi-key">Model</div>
-          <div class="pi-val">22300B</div>
+          <div class="pi-key">Band Material</div>
+          <div class="pi-val">Metal</div>
         </div>
 
         <div class="pi-row">
-          <div class="pi-key">Power Generation</div>
-          <div class="pi-val">Electricity</div>
+          <div class="pi-key">Waterproof</div>
+          <div class="pi-val">Yes</div>
+        </div>
+
+        <div class="pi-row">
+          <div class="pi-key">Watch Features</div>
+          <div class="pi-val">Luminous</div>
+        </div>
+
+        <div class="pi-row">
+          <div class="pi-key">Watch Movement</div>
+          <div class="pi-val">Quartz</div>
+        </div>
+
+        <div class="pi-row">
+          <div class="pi-key">Watch Case Size</div>
+          <div class="pi-val">41 mm</div>
+        </div>
+
+        <div class="pi-row">
+          <div class="pi-key">Embellishment Feature</div>
+          <div class="pi-val">Cubic Zirconia</div>
+        </div>
+
+        <div class="pi-row">
+          <div class="pi-key">Gender</div>
+          <div class="pi-val">Men, Boys, Youth</div>
+        </div>
+
+        <div class="pi-row">
+          <div class="pi-key">Colour Name</div>
+          <div class="pi-val">Blue/Gold</div>
+        </div>
+
+        <div class="pi-row">
+          <div class="pi-key">Basic Colours</div>
+          <div class="pi-val">Blue, Gold</div>
         </div>
 
         <div class="pi-row">
           <div class="pi-key">What's in the box</div>
           <div class="pi-val">
-            1 x Kettle<br>
-            1 x Instruction Manual
+            1 x Golden Perfect Series Men's Watch<br>
+            1 x Instruction manual<br>
+            1 x Earphones<br>
+            1 x Watch Adjuster
           </div>
         </div>
 
         <div class="pi-row">
-          <div class="pi-key">Assembled Dimensions</div>
-          <div class="pi-val">25 x 22 x 19 cm</div>
+          <div class="pi-key">Barcode</div>
+          <div class="pi-val">MPTALX23354378-0</div>
         </div>
-
-        <div class="pi-row">
-          <div class="pi-key">Kitchen Appliance Type</div>
-          <div class="pi-val">Kettle</div>
-        </div>
-
-        <div class="pi-row">
-          <div class="pi-key">Electric Kettle Material</div>
-          <div class="pi-val">Borosilicate Glass</div>
-        </div>
-
-       <div class="pi-row">
-  <div class="pi-key">Color</div>
-  <div class="pi-val">Blue</div>
-</div>
-
-<div class="pi-row">
-  <div class="pi-key">Basic Colours</div>
-  <div class="pi-val">Blue</div>
-</div>
-
-<div class="pi-row">
-  <div class="pi-key">Barcode</div>
-  <div class="pi-val">6002674011645</div>
-</div>
 
         </div>
       </div>
@@ -1943,92 +1992,83 @@ What's in the box
 
     <div class="rv-preview-meta">
       <span class="rv-star">★</span>
-      <span class="rv-score">4.9</span>
-      <span class="rv-count">3497 reviews</span>
+      <span class="rv-score">5.0</span>
+      <span class="rv-count">1249 reviews</span>
     </div>
   </div>
 
   <div class="rv-list">
 
-  <div class="rv-item">
-    <div class="rv-item-stars">★★★★★</div>
-    <div class="rv-item-head">
-      <strong>Zephnet</strong> - 25 Dec 2025
+    <div class="rv-item">
+      <div class="rv-item-stars">★★★★★</div>
+      <div class="rv-item-head">
+        <strong>Sandile</strong> - 11 Jul 2025
+      </div>
+      <div class="rv-item-sub">(Reviewed 10 days after purchase)</div>
+      <div class="rv-item-text">
+        This combo is the best. The watch is perfect, and the earphones are impressive. At first it felt a bit big, but after adjusting the strap it fits perfectly. Very happy with this purchase.
+      </div>
     </div>
-    <div class="rv-item-sub">(Reviewed on day of purchase)</div>
-    <div class="rv-item-text">
-      Absolutely love this kettle! The glass design is beautiful and the blue light makes it look premium. Boils very fast and feels solid. Highly recommended.
+
+    <div class="rv-item">
+      <div class="rv-item-stars">★★★★★</div>
+      <div class="rv-item-head">
+        <strong>Buthelezi</strong> - 07 May 2025
+      </div>
+      <div class="rv-item-sub">(Reviewed 4 days after purchase)</div>
+      <div class="rv-item-text">
+        This set is a real bargain. You get both a stylish watch and solid wireless earphones — perfect as a gift or even just to treat yourself. In SA, finding value like this isn't always easy.
+      </div>
+    </div>
+
+    <div class="rv-item">
+      <div class="rv-item-stars">★★★★★</div>
+      <div class="rv-item-head">
+        <strong>Nothile Msweli</strong> - 24 Jun 2025
+      </div>
+      <div class="rv-item-sub">(Reviewed a month after purchase)</div>
+      <div class="rv-item-text">
+        My boy loved the birthday gift. The biggest surprise was the earbuds – they look and sound just like the premium ones. Definitely worth every cent.
+      </div>
+    </div>
+
+    <div class="rv-item">
+      <div class="rv-item-stars">★★★★★</div>
+      <div class="rv-item-head">
+        <strong>Nomphelo Makwetu</strong> - 06 Jun 2025
+      </div>
+      <div class="rv-item-sub">(Reviewed 14 days after purchase)</div>
+      <div class="rv-item-text">
+        Didn’t expect the earphones to be this good – feels like using AirPods! Watch is solid too. For this price, it’s a steal. Highly recommended combo.
+      </div>
+    </div>
+
+    <div class="rv-item">
+      <div class="rv-item-stars">★★★★★</div>
+      <div class="rv-item-head">
+        <strong>Thabo L.</strong> - 02 Aug 2025
+      </div>
+      <div class="rv-item-sub">(Reviewed after first week)</div>
+      <div class="rv-item-text">
+        Very stylish and comfortable to wear. The watch looks premium and the earphones connect easily to my phone. Great quality for the price.
+      </div>
+    </div>
+
+    <div class="rv-item">
+      <div class="rv-item-stars">★★★★★</div>
+      <div class="rv-item-head">
+        <strong>Lerato P.</strong> - 19 Jul 2025
+      </div>
+      <div class="rv-item-sub">(Reviewed 5 days after purchase)</div>
+      <div class="rv-item-text">
+        I bought this combo for my boyfriend and he absolutely loves it. The packaging was clean and everything works perfectly.
+      </div>
     </div>
   </div>
-
-  <div class="rv-item">
-    <div class="rv-item-stars">★★★★★</div>
-    <div class="rv-item-head">
-      <strong>Chanele</strong> - 18 Jan 2026
-    </div>
-    <div class="rv-item-sub">(Reviewed 5 days after purchase)</div>
-    <div class="rv-item-text">
-      Perfect kettle for my kitchen. It heats up quickly, is very easy to use and looks amazing on the counter. Great value for money.
-    </div>
-  </div>
-
-  <div class="rv-item">
-    <div class="rv-item-stars">★★★★★</div>
-    <div class="rv-item-head">
-      <strong>Robynn</strong> - 25 Jan 2026
-    </div>
-    <div class="rv-item-sub">(Reviewed 7 days after purchase)</div>
-    <div class="rv-item-text">
-      Very impressed with the quality. The glass body feels strong and the lid mechanism is smooth. Water boils in less than 3 minutes.
-    </div>
-  </div>
-
-  <div class="rv-item">
-    <div class="rv-item-stars">★★★★★</div>
-    <div class="rv-item-head">
-      <strong>Daniel M.</strong> - 02 Jan 2026
-    </div>
-    <div class="rv-item-sub">(Reviewed 10 days after purchase)</div>
-    <div class="rv-item-text">
-      One of the best kettles I’ve ever owned. Silent, fast and very stylish. The LED light is a nice touch. Would definitely buy again.
-    </div>
-  </div>
-
-  <div class="rv-item">
-    <div class="rv-item-stars">★★★★★</div>
-    <div class="rv-item-head">
-      <strong>Sandra P.</strong> - 11 Aug 2025
-    </div>
-    <div class="rv-item-sub">(Reviewed 3 days after purchase)</div>
-    <div class="rv-item-text">
-      Excellent product! Easy to clean, large capacity and very efficient. Makes my morning routine much easier.
-    </div>
-  </div>
-
-  <div class="rv-item">
-    <div class="rv-item-stars">★★★★★</div>
-    <div class="rv-item-head">
-      <strong>Michael T.</strong> - 19 Sep 2025
-    </div>
-    <div class="rv-item-sub">(Reviewed 14 days after purchase)</div>
-    <div class="rv-item-text">
-      Beautiful design and top performance. Heats water extremely fast and feels premium. Totally worth the price.
-    </div>
-  </div>
-
-  <div class="rv-item">
-    <div class="rv-item-stars">★★★★★</div>
-    <div class="rv-item-head">
-      <strong>Amanda R.</strong> - 04 Oct 2025
-    </div>
-    <div class="rv-item-sub">(Reviewed 1 week after purchase)</div>
-    <div class="rv-item-text">
-      I bought this as a gift and my friend loved it. The blue light effect is stunning and it works perfectly.
-    </div>
-  </div>
-
 </div>
-
+</div>
+</div>
+</div>
 </section>
 
 
@@ -2072,7 +2112,7 @@ What's in the box
 
   <script>
     // === Carousel simples (pontinhos trocam a imagem) ===
-    const images = ["p1.png","p2.png","p3.png","p4.png","p5.png", "p6.png", "p7.png", "p8.png", "p9.png", "p10.png", "p11.png", "p12.png"];
+    const images = ["p1.png","p2.png","p3.png","p4.png","p5.png", "p6.png", "p7.png", "p8.png", "p9.png", "p10.png", "p11.png", "p12.png", "p13.png", "p14.png", "p15.png", "p16.png"];
 
     const productImage = document.getElementById("productImage");
     const dots = Array.from(document.querySelectorAll(".dot"));
@@ -2392,7 +2432,25 @@ modalImg.addEventListener("touchend", e => {
   }
 });
 
+// ===== TROCA DE COR / IMAGEM PRINCIPAL =====
+const mainImage = document.getElementById("productImage");
+const colorOptions = document.querySelectorAll(".color-option");
+
+colorOptions.forEach(option => {
+  option.addEventListener("click", () => {
+    const newImg = option.getAttribute("data-img");
+
+    // troca imagem principal
+    mainImage.src = newImg;
+
+    // remove active de todos
+    colorOptions.forEach(o => o.classList.remove("active"));
+
+    // adiciona active ao clicado
+    option.classList.add("active");
+  });
+});
+
   </script>
 </body>
 </html>
-
